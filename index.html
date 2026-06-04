@@ -4277,8 +4277,9 @@ let answers = new Array(BPI_QUESTIONS.length).fill(0);
 let cur = 0;
 
 function start(){
-  show("bpi-quiz");
+  answers = new Array(BPI_QUESTIONS.length).fill(0);
   cur = 0;
+  show("bpi-quiz");
   renderQ();
 }
 
@@ -4500,7 +4501,12 @@ var BXT_ZONE = {
 let answers = new Array(BXT_QUESTIONS.length).fill(0);
 let cur = 0;
 
-function start(){ show("bxt-quiz"); cur=0; renderQ(); }
+function start(){
+  answers = new Array(BXT_QUESTIONS.length).fill(0);
+  cur = 0;
+  show("bxt-quiz");
+  renderQ();
+}
 function show(id){
   var page=document.getElementById("spa-bxpoint");
   if(page) page.querySelectorAll(".screen").forEach(s=>s.classList.remove("active"));
