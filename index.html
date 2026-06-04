@@ -1154,12 +1154,12 @@
     /* ── 두 전문가 ── */
     .experts-sec{padding:100px 0}
     .experts-hd{text-align:center;margin-bottom:64px}
-    .experts-grid{display:grid;grid-template-columns:1fr 80px 1fr;gap:0;align-items:stretch}
+    .experts-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch}
     .exp-card{border-radius:24px;padding:40px;position:relative;overflow:hidden}
-    .exp-card.navy{background:linear-gradient(140deg,var(--navy) 0%,var(--navy-mid) 100%);border-radius:24px 0 0 24px;border:1px solid rgba(8,47,111,.3);border-right:none}
-    .exp-card.blue{background:linear-gradient(140deg,var(--blue) 0%,var(--blue-deep) 100%);border-radius:0 24px 24px 0;border:1px solid rgba(54,132,255,.3);border-left:none}
-    .exp-divider{background:linear-gradient(180deg,var(--navy),var(--blue));display:flex;align-items:center;justify-content:center}
-    .exp-div-label{writing-mode:vertical-rl;font-size:11px;font-weight:800;color:rgba(255,255,255,.5);letter-spacing:.2em}
+    .exp-card.navy{background:linear-gradient(135deg,var(--navy) 0%,#1040A0 100%);border-radius:24px 0 0 24px;border:1px solid rgba(8,47,111,.3);border-right:none}
+    .exp-card.blue{background:linear-gradient(135deg,#1B5FD8 0%,var(--blue) 100%);border-radius:0 24px 24px 0;border:1px solid rgba(54,132,255,.3);border-left:none}
+    .exp-divider{display:none!important}
+    .exp-div-label{display:none!important}
     .exp-badge{display:inline-block;padding:4px 10px;font-size:11px;font-weight:800;letter-spacing:.07em;border-radius:6px;background:rgba(255,255,255,.14);color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.18);margin-bottom:16px}
     .exp-name{font-size:24px;font-weight:900;color:#fff;letter-spacing:-.04em;margin-bottom:4px}
     .exp-role{font-size:13px;color:rgba(255,255,255,.5);font-weight:500;margin-bottom:20px}
@@ -1211,8 +1211,6 @@
       .consult-inner{grid-template-columns:1fr;gap:32px}
       .experts-grid{grid-template-columns:1fr;gap:14px}
       .exp-card.navy,.exp-card.blue{border-radius:20px;border:1px solid rgba(255,255,255,.15)}
-      .exp-divider{height:48px;flex-direction:row}
-      .exp-div-label{writing-mode:horizontal-tb}
       .cta-inner{padding:0 20px}
       .cta-box{padding:40px 28px}
       .foot-inner{flex-direction:column;text-align:center;padding:0 20px}
@@ -1581,8 +1579,6 @@
       .consult-right{padding:32px 24px}
       .experts-grid{grid-template-columns:1fr;gap:12px}
       .exp-card.navy,.exp-card.blue{border-radius:18px;padding:32px 24px;border:1px solid rgba(255,255,255,.15)}
-      .exp-divider{height:44px;flex-direction:row}
-      .exp-div-label{writing-mode:horizontal-tb}
       .experts-note{padding:20px 24px;font-size:14px}
       .hero-meta{grid-template-columns:1fr 1fr;max-width:100%}
 
@@ -1637,6 +1633,14 @@
       .nav-menu a:last-child{border-bottom:none}
       .nav-cta{margin:12px 20px 4px;border-radius:10px!important;text-align:center}
     }
+
+    /* 워크숍 CTA 다크배경 텍스트 가시성 */
+    #spa-workshop .cta-ttl{color:#ffffff!important}
+    #spa-workshop .cta-desc{color:rgba(255,255,255,.75)!important}
+    #spa-workshop .cta-eye{color:rgba(54,132,255,.9)!important}
+    #spa-workshop .cta-note{color:rgba(255,255,255,.45)!important}
+    #spa-workshop .btn-cta-s{color:rgba(255,255,255,.85)!important;border-color:rgba(255,255,255,.3)!important}
+    #spa-workshop .btn-cta-s:hover{color:#fff!important;border-color:#fff!important}
 
   </style>
 
@@ -3511,9 +3515,6 @@
           <span class="exp-tag">실행루프</span>
           <span class="exp-tag">판단 패턴</span>
         </div>
-      </div>
-      <div class="exp-divider">
-        <span class="exp-div-label">通</span>
       </div>
       <div class="exp-card blue">
         <div class="exp-badge">TONG · 경영전환</div>
