@@ -1228,7 +1228,7 @@
 /* ===== BPI ===== */
 
   :root{
-    --blue:#3182F6; --blue-deep:#1B64DA; --blue-soft:#E8F2FF; --blue-bg:#F4F8FF;
+    --blue:#2569D6; --blue-deep:#1B64DA; --blue-soft:#E8F2FF; --blue-bg:#F4F8FF;
     --ink:#191F28; --ink-2:#333D4B; --ink-3:#4E5968; --ink-4:#6B7684; --ink-5:#8B95A1;
     --line:#E5E8EB; --line-soft:#F2F4F6; --bg:#FFFFFF; --bg-soft:#F9FAFB;
     --red:#E03131; --amber:#E8A700; --green:#1F9254;
@@ -1357,7 +1357,7 @@
 /* ===== BXPOINT ===== */
 
   :root{
-    --blue:#3182F6; --blue-deep:#1B64DA; --blue-soft:#E8F2FF; --blue-bg:#F4F8FF;
+    --blue:#2569D6; --blue-deep:#1B64DA; --blue-soft:#E8F2FF; --blue-bg:#F4F8FF;
     --ink:#191F28; --ink-2:#333D4B; --ink-3:#4E5968; --ink-4:#6B7684; --ink-5:#8B95A1;
     --line:#E5E8EB; --line-soft:#F2F4F6; --bg:#FFFFFF; --bg-soft:#F9FAFB;
     --red:#E03131; --amber:#E8A700; --green:#1F9254;
@@ -1625,7 +1625,7 @@
     }
 
 
-    @media(max-width:768px){
+    @media(max-width:960px){
       #nav-toggle{display:flex!important}
       .nav-menu{position:fixed;top:60px;left:0;right:0;background:rgba(255,255,255,.97);backdrop-filter:blur(20px);padding:12px 0;flex-direction:column;gap:0;align-items:stretch;transform:translateY(-110%);transition:transform .3s cubic-bezier(0.16,1,0.3,1);box-shadow:0 8px 24px rgba(8,47,111,.1);z-index:99}
       .nav-menu.open{transform:translateY(0)}
@@ -1654,7 +1654,263 @@
     #spa-management .btn-line{color:var(--navy)!important;border-color:rgba(8,47,111,.3)!important}
     #spa-management .btn-blue{background:var(--blue)!important;color:#fff!important}
 
-  </style>
+  /* @@CONTRAST_PATCH_START@@ */
+/* 같은 클래스명이 페이지별로 충돌해 생긴 가독성 문제 자동 보정 */
+#spa-bpi .gauge-card .gauge-scale span{color:#46597A !important}
+#spa-bpi .app .screen.active .foot{color:#46597A !important}
+#spa-bpi .card .scale-hint span{color:#46597A !important}
+#spa-bpi .app .screen .foot{color:#46597A !important}
+#spa-bpi .block .block-t span{color:#46597A !important}
+#spa-bpi .app .screen .disclaimer{color:#46597A !important}
+#spa-bpi .progress-top .progress-step .now{color:#1B64DA !important}
+#spa-bpi .topbar .brand b{color:#1B64DA !important}
+#spa-bpi .screen.active .card .blue{color:#1B64DA !important}
+#spa-bpi .screen .card .q-num{color:#1B64DA !important}
+#spa-bpi .screen.active .card .note{color:#46597A !important}
+#spa-bpi .meta-row .meta .k{color:#46597A !important}
+#spa-bpi .progress-wrap .progress-top .progress-step{color:#46597A !important}
+#spa-bpi .diag-cta-box .contact b{color:#FFFFFF !important}
+#spa-bxpoint .gauge-card .gauge-scale span{color:#46597A !important}
+#spa-bxpoint .app .screen.active .foot{color:#46597A !important}
+#spa-bxpoint .card .scale-hint span{color:#46597A !important}
+#spa-bxpoint .app .screen .foot{color:#46597A !important}
+#spa-bxpoint .block .block-t span{color:#46597A !important}
+#spa-bxpoint .app .screen .disclaimer{color:#46597A !important}
+#spa-bxpoint .progress-top .progress-step .now{color:#1B64DA !important}
+#spa-bxpoint .topbar .brand b{color:#1B64DA !important}
+#spa-bxpoint .screen.active .card .blue{color:#1B64DA !important}
+#spa-bxpoint .screen .card .q-num{color:#1B64DA !important}
+#spa-bxpoint .screen.active .card .note{color:#46597A !important}
+#spa-bxpoint .meta-row .meta .k{color:#46597A !important}
+#spa-bxpoint .progress-wrap .progress-top .progress-step{color:#46597A !important}
+#spa-bxpoint .block .axis-box .ax-rx{color:#46597A !important}
+#spa-bxpoint .diag-cta-box .contact b{color:#FFFFFF !important}
+#spa-cognitive .loop-wrap .loop-center .loop-label{color:#46597A !important}
+#spa-cognitive .cta-inner .cta-box .cta-note{color:#46597A !important}
+#spa-cognitive .loop-nodes .loop-node.node-x .n-key{color:#46597A !important}
+#spa-cognitive .loop-nodes .loop-node.node-x .n-lbl{color:#46597A !important}
+#spa-cognitive .loop-nodes .loop-node.node-c .n-key{color:#FFFFFF !important}
+#spa-cognitive .loop-nodes .loop-node.node-c .n-lbl{color:#FFFFFF !important}
+#spa-cognitive .program-grid .prog-card.featured .prog-time{color:#FFFFFF !important}
+#spa-cognitive .loop-wrap .loop-center .loop-sub{color:#46597A !important}
+#spa-cognitive .program-grid .prog-card.featured .prog-label{color:#FFFFFF !important}
+#spa-cognitive .prog-card.featured .prog-items li{color:#FFFFFF !important}
+#spa-cognitive .problem-grid .problem-card .problem-num{color:#46597A !important}
+#spa-cognitive .program-grid .prog-card .prog-time{color:#46597A !important}
+#spa-cognitive .founder-inner .founder-left .founder-role{color:#46597A !important}
+#spa-cognitive .case-cards .case-card .case-org{color:#46597A !important}
+#spa-cognitive .case-metrics .case-metric .case-metric-lbl{color:#46597A !important}
+#spa-cognitive .testi-card .testi-meta .testi-role{color:#46597A !important}
+#spa-cognitive .necx-panel.active .necx-main .necx-step-eng{color:#FFFFFF !important}
+#spa-cognitive .necx-panel .necx-main .necx-step-eng{color:#FFFFFF !important}
+#spa-cognitive .wrap .problem-hd .sec-eye{color:#1B64DA !important}
+#spa-cognitive .wrap .necx-hd .sec-eye{color:#1B64DA !important}
+#spa-cognitive .necx-side .necx-side-card.active .nsc-key{color:#1B64DA !important}
+#spa-cognitive .necx-side .necx-side-card .nsc-key{color:#1B64DA !important}
+#spa-cognitive .wrap .program-hd .sec-eye{color:#1B64DA !important}
+#spa-cognitive .founder-inner .founder-right .case-header{color:#1B64DA !important}
+#spa-cognitive .wrap .testi-hd .sec-eye{color:#1B64DA !important}
+#spa-cognitive .cta-inner .cta-box .cta-eye{color:#1B64DA !important}
+#spa-cognitive .loop-nodes .loop-node.node-n .n-key{color:#FFFFFF !important}
+#spa-cognitive .loop-nodes .loop-node.node-n .n-lbl{color:#FFFFFF !important}
+#spa-diagnosis .together-inner .tog-btns .btn-tog-s{color:#FFFFFF !important}
+#spa-diagnosis .diag-grid .diag-card.diag-navy .dc-icon{color:#FFFFFF !important}
+#spa-diagnosis .wrap .together-inner .tog-eye{color:#FFFFFF !important}
+#spa-diagnosis .together-inner .tog-flow .tog-arrow{color:#FFFFFF !important}
+#spa-diagnosis .diag-grid .diag-card.diag-blue .dc-eng{color:#FFFFFF !important}
+#spa-diagnosis .hero .hero-inner .hero-note{color:#46597A !important}
+#spa-diagnosis .diag-grid .diag-card.diag-blue .dc-desc{color:#FFFFFF !important}
+#spa-diagnosis .diag-card.diag-blue .dc-meta .dc-meta-item{color:#FFFFFF !important}
+#spa-diagnosis .diag-card.diag-blue .dc-tags .dc-tag{color:#FFFFFF !important}
+#spa-diagnosis .diag-grid .diag-card.diag-blue .dc-badge{color:#FFFFFF !important}
+#spa-diagnosis .diag-sec .wrap .diag-or{color:#46597A !important}
+#spa-diagnosis .faq-item .faq-q .faq-q-icon{color:#46597A !important}
+#spa-diagnosis .wrap .together-inner .tog-desc{color:#FFFFFF !important}
+#spa-diagnosis .tog-flow .tog-step .ts-num{color:#FFFFFF !important}
+#spa-diagnosis .hero .hero-inner .cb{color:#1B64DA !important}
+#spa-diagnosis .diag-grid .diag-card.diag-blue .dc-icon{color:#FFFFFF !important}
+#spa-diagnosis .diag-grid .diag-card.diag-navy .dc-eng{color:#FFFFFF !important}
+#spa-diagnosis .wrap .guide-hd .sec-eye{color:#1B64DA !important}
+#spa-diagnosis .wrap .faq-hd .sec-eye{color:#1B64DA !important}
+#spa-diagnosis .tog-flow .tog-step .ts-desc{color:#FFFFFF !important}
+#spa-footer .foot-inner .foot-meta{color:#FFFFFF !important}
+#spa-home .cta-box .cta-btns .btn-consult{color:#46597A !important}
+#spa-home .cta-inner .cta-box .cta-note{color:#46597A !important}
+#spa-home .axes-grid .ax-blue .ax-eng{color:#FFFFFF !important}
+#spa-home .axes-grid .ax-blue .ax-quote{color:#FFFFFF !important}
+#spa-home .axes-grid .ax-blue .ax-badge{color:#FFFFFF !important}
+#spa-home .ws-steps .ws-step .ws-desc{color:#46597A !important}
+#spa-home .ws-step .ws-dot-wrap .ws-dot{color:#1B64DA !important}
+#spa-home .hero .hero-inner .hl-blue{color:#1B64DA !important}
+#spa-home .axes-grid .ax-navy .ax-eng{color:#FFFFFF !important}
+#spa-home .axes-inner .axes-hd .sec-eye{color:#1B64DA !important}
+#spa-home .axes-hd .sec-ttl .cb{color:#1B64DA !important}
+#spa-home .ws-inner .ws-hd .sec-eye{color:#1B64DA !important}
+#spa-home .cta-sec .cta-inner .cta-eye{color:#1B64DA !important}
+#spa-management .cta-inner .cta-box .cta-note{color:#46597A !important}
+#spa-management .axis-panel.active .axis-main .axis-step-char{color:#FFFFFF !important}
+#spa-management .axis-panel .axis-main .axis-step-char{color:#FFFFFF !important}
+#spa-management .axis-panel.active .axis-main .axis-step-eng{color:#FFFFFF !important}
+#spa-management .axis-panel .axis-main .axis-step-eng{color:#FFFFFF !important}
+#spa-management .program-grid .prog-card.featured .prog-time{color:#FFFFFF !important}
+#spa-management .axis-diagram .axis-center .axis-center-lbl{color:#46597A !important}
+#spa-management .axis-diagram .axis-center .axis-center-sub{color:#46597A !important}
+#spa-management .axis-main .axis-step-points li{color:#FFFFFF !important}
+#spa-management .axis-panel.active .axis-main .axis-step-quote{color:#FFFFFF !important}
+#spa-management .axis-panel .axis-main .axis-step-quote{color:#FFFFFF !important}
+#spa-management .axis-panel.active .axis-main .axis-step-badge{color:#FFFFFF !important}
+#spa-management .axis-panel .axis-main .axis-step-badge{color:#FFFFFF !important}
+#spa-management .program-grid .prog-card.featured .prog-label{color:#FFFFFF !important}
+#spa-management .prog-card.featured .prog-items li{color:#FFFFFF !important}
+#spa-management .problem-grid .prob-card .prob-num{color:#46597A !important}
+#spa-management .abcde-cards .abcde-card .ac-eng{color:#46597A !important}
+#spa-management .wrap .founder-inner .founder-role{color:#46597A !important}
+#spa-management .case-cards .case-card .case-org{color:#46597A !important}
+#spa-management .case-metrics .case-metric .case-metric-lbl{color:#46597A !important}
+#spa-management .program-grid .prog-card .prog-time{color:#46597A !important}
+#spa-management .testi-card .testi-meta .testi-role{color:#46597A !important}
+#spa-management .wrap .problem-hd .sec-eye{color:#1B64DA !important}
+#spa-management .problem-hd .sec-ttl .cb{color:#1B64DA !important}
+#spa-management .wrap .axis-hd .sec-eye{color:#1B64DA !important}
+#spa-management .axis-hd .sec-ttl .cb{color:#1B64DA !important}
+#spa-management .wrap .axis-tabs .axis-tab{color:#1B64DA !important}
+#spa-management .axis-side .axis-side-card.featured .asc-key{color:#1B64DA !important}
+#spa-management .axis-side .axis-side-card .asc-key{color:#1B64DA !important}
+#spa-management .wrap .abcde-hd .sec-eye{color:#1B64DA !important}
+#spa-management .abcde-hd .sec-ttl .cb{color:#1B64DA !important}
+#spa-management .wrap .abcde-intro .cb{color:#1B64DA !important}
+#spa-management .abcde-cards .abcde-card .ac-key{color:#46597A !important}
+#spa-management .wrap .founder-inner .case-header{color:#1B64DA !important}
+#spa-management .wrap .program-hd .sec-eye{color:#1B64DA !important}
+#spa-management .wrap .testi-hd .sec-eye{color:#1B64DA !important}
+#spa-management .cta-inner .cta-box .cta-eye{color:#1B64DA !important}
+#spa-workshop .hero .hero-inner .hl-b{color:#46597A !important}
+#spa-workshop .cta-inner .cta-box .cta-ttl{color:#46597A !important}
+#spa-workshop .cta-inner .cta-box .cta-desc{color:#46597A !important}
+#spa-workshop .cta-box .cta-btns .btn-cta-s{color:#46597A !important}
+#spa-workshop .cta-inner .cta-box .cta-note{color:#46597A !important}
+#spa-workshop .experts-grid .exp-card.blue .exp-role{color:#FFFFFF !important}
+#spa-workshop .hero .hero-inner .hl-n{color:#1B64DA !important}
+#spa-workshop .experts-grid .exp-card.blue .exp-contrib{color:#FFFFFF !important}
+#spa-workshop .hero-inner .hero-badge .sep{color:#46597A !important}
+#spa-workshop .hero-meta .hero-meta-item .hmi-label{color:#46597A !important}
+#spa-workshop .hero-meta .hero-meta-item .hmi-sub{color:#46597A !important}
+#spa-workshop .overview-grid .ov-card .ov-ttl{color:#46597A !important}
+#spa-workshop .flow-item .flow-right .flow-arrow{color:#46597A !important}
+#spa-workshop .wrap .not-target .nt-label{color:#46597A !important}
+#spa-workshop .wrap .not-target .nt-text{color:#46597A !important}
+#spa-workshop .testi-card .testi-meta .testi-role{color:#46597A !important}
+#spa-workshop .experts-grid .exp-card.blue .exp-keyword{color:#FFFFFF !important}
+#spa-workshop .cta-inner .cta-box .cta-eye{color:#1B64DA !important}
+#spa-workshop .flow-left .flow-dot .fd-num{color:#1B64DA !important}
+#spa-workshop .flow-left .flow-dot .fd-lbl{color:#1B64DA !important}
+#spa-workshop .experts-grid .exp-card.navy .exp-role{color:#FFFFFF !important}
+#spa-workshop .exp-card.blue .exp-tags .exp-tag{color:#FFFFFF !important}
+#spa-workshop .experts-grid .exp-card.blue .exp-badge{color:#FFFFFF !important}
+#spa-workshop .wrap .overview-hd .sec-eye{color:#1B64DA !important}
+#spa-workshop .overview-hd .sec-ttl .cb{color:#1B64DA !important}
+#spa-workshop .wrap .flow-hd .sec-eye{color:#1B64DA !important}
+#spa-workshop .flow-hd .sec-ttl .cb{color:#1B64DA !important}
+#spa-workshop .flow-right .flow-right-body .flow-owner{color:#1B64DA !important}
+#spa-workshop .wrap .output-hd .sec-eye{color:#1B64DA !important}
+#spa-workshop .output-hd .sec-ttl .cb{color:#1B64DA !important}
+#spa-workshop .output-grid .out-card .out-num{color:#1B64DA !important}
+#spa-workshop .wrap .target-hd .sec-eye{color:#1B64DA !important}
+#spa-workshop .consult-left .sec-ttl .cb{color:#1B64DA !important}
+#spa-workshop .consult-steps .cs-step .cs-week{color:#1B64DA !important}
+#spa-workshop .wrap .experts-hd .sec-eye{color:#1B64DA !important}
+#spa-workshop .experts-hd .sec-ttl .cb{color:#1B64DA !important}
+#spa-workshop .wrap .testi-hd .sec-eye{color:#1B64DA !important}
+#spa-workshop .consult-inner .consult-right .cr-sub{color:#FFFFFF !important}
+#spa-workshop .experts-grid .exp-card.navy .exp-contrib{color:#FFFFFF !important}
+#spa-management .wrap .axis-tabs .axis-tab.active{color:#FFFFFF !important}
+
+/* [배경 보정] 연한 파랑 위 흰 글자 글라스 칩 — 틴트를 어둡게 해 대비 확보(글라스/블러 유지) */
+.ax-item{background:rgba(7,28,66,.42) !important;color:#FFFFFF !important}
+.ax-item:hover{background:rgba(7,28,66,.52) !important}
+.ax-item.active{background:rgba(7,28,66,.60) !important;border-color:rgba(255,255,255,.6) !important;color:#FFFFFF !important}
+.dc-btn{background:rgba(7,28,66,.42) !important;color:#FFFFFF !important}
+.diag-card:hover .dc-btn{background:rgba(7,28,66,.55) !important}
+/* 진단 점수 badge 대기상태('—') 기본 배경 — 결과 산출 시 JS가 색 덮어씀 */
+#bpi-rBadge, #bxt-rBadge{background:#E2E8F5;color:#46597A !important}
+
+/* ===== 2차 보정: 파란 카드 위 흰 글자 소형 칩 — 흰 오버레이가 배경을 밝혀 대비 저하 → 다크 네이비 오버레이로 교체(글라스 유지) ===== */
+.diag-card.diag-blue .dc-tag,
+.diag-card.diag-blue .dc-meta-item{background:rgba(7,28,66,.30) !important;border-color:rgba(255,255,255,.18) !important}
+.diag-card.diag-blue .dc-badge{background:rgba(7,28,66,.34) !important}
+.ax-blue .ax-badge{background:rgba(7,28,66,.34) !important}
+.ax-blue .ax-quote{background:rgba(7,28,66,.22) !important}
+.exp-card.blue .exp-badge{background:rgba(7,28,66,.34) !important}
+.axis-panel .axis-step-badge{background:rgba(7,28,66,.34) !important}
+.axis-panel .axis-step-quote{background:rgba(7,28,66,.22) !important}
+.prog-card.featured .prog-label{background:rgba(7,28,66,.30) !important;border-color:rgba(255,255,255,.2) !important}
+/* NECX 루프 노드 — 밝은 노드(c·x) 배경을 다크 네이비로 통일, 모든 글자 흰색(가독) */
+.loop-node.node-c{background:rgba(13,37,80,.92) !important}
+.loop-node.node-x{background:rgba(13,37,80,.92) !important;border-color:rgba(123,167,232,.5) !important}
+#spa-cognitive .loop-nodes .loop-node.node-x .n-key,
+#spa-cognitive .loop-nodes .loop-node.node-x .n-lbl{color:#FFFFFF !important}
+/* 연한 하늘색 배경 위 파란 글자/숫자 — 한 톤 진하게(cr 5+) */
+/* 연한 하늘색 배경 위 파란 글자/숫자 — 앞선 패치(#1B64DA)를 동일 명시도로 한 톤 더 진하게(cr 5+) */
+#spa-home .ws-step .ws-dot-wrap .ws-dot{color:#1857C4 !important}
+#spa-home .hero .hero-inner .hl-blue{color:#1857C4 !important}
+#spa-home .axes-hd .sec-ttl .cb{color:#1857C4 !important}
+#spa-workshop .hero .hero-inner .hl-n{color:#1857C4 !important}
+#spa-diagnosis .hero .hero-inner .cb{color:#1857C4 !important}
+#spa-management .problem-hd .sec-ttl .cb,
+#spa-management .axis-hd .sec-ttl .cb,
+#spa-management .abcde-hd .sec-ttl .cb,
+#spa-management .wrap .abcde-intro .cb{color:#1857C4 !important}
+#spa-workshop .overview-hd .sec-ttl .cb,
+#spa-workshop .flow-hd .sec-ttl .cb,
+#spa-workshop .output-hd .sec-ttl .cb,
+#spa-workshop .consult-left .sec-ttl .cb,
+#spa-workshop .experts-hd .sec-ttl .cb{color:#1857C4 !important}
+/* 파트너 CTA 영문 강조도 소형이라 진한 브랜드블루로(가독) */
+#spa-management .pcta-name b{color:#2563EB !important}
+
+/* @@CONTRAST_PATCH_END@@ */
+
+/* ===== 모바일 햄버거 버튼(원본 누락분 보완) ===== */
+#nav-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:42px;height:42px;
+  padding:9px;margin-left:auto;border:none;background:transparent;cursor:pointer;border-radius:8px}
+#nav-toggle span{display:block;width:100%;height:2px;background:var(--navy,#082F6F);border-radius:2px;
+  transition:transform .25s,opacity .25s}
+#nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+#nav-toggle.open span:nth-child(2){opacity:0}
+#nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ===== 파트너 연결 CTA (외부 사이트 이동) ===== */
+.pcta-sec{padding:0 0 110px;text-align:center}
+.pcta-inner{max-width:720px;margin:0 auto;padding:0 40px}
+.pcta-card{display:flex;align-items:center;justify-content:space-between;gap:24px;
+  text-decoration:none;background:#ffffff;border:1px solid rgba(8,47,111,.1);
+  border-radius:24px;padding:30px 34px;box-shadow:0 4px 32px rgba(8,47,111,.07);
+  transition:transform .22s cubic-bezier(.2,.7,.3,1),box-shadow .22s,border-color .22s;
+  position:relative;overflow:hidden}
+.pcta-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:5px;
+  background:var(--pcta-accent);transition:width .22s}
+.pcta-card:hover{transform:translateY(-4px);box-shadow:0 14px 44px rgba(8,47,111,.14);
+  border-color:var(--pcta-accent)}
+.pcta-card:hover::before{width:8px}
+.pcta-meta{display:flex;flex-direction:column;align-items:flex-start;gap:7px;text-align:left;padding-left:8px}
+.pcta-eye{font-size:12px;font-weight:800;letter-spacing:.04em;color:var(--pcta-pill,var(--pcta-accent));
+  text-transform:uppercase}
+.pcta-name{font-size:20px;font-weight:800;letter-spacing:-.02em;color:#0D1B2E;line-height:1.25}
+.pcta-name b{color:var(--pcta-accent);font-weight:800}
+.pcta-desc{font-size:13.5px;font-weight:500;color:#46597A;line-height:1.5}
+.pcta-go{flex-shrink:0;display:inline-flex;align-items:center;gap:6px;
+  background:var(--pcta-pill,var(--pcta-accent));color:#ffffff;font-size:14px;font-weight:800;
+  padding:13px 22px;border-radius:999px;white-space:nowrap;transition:gap .2s}
+.pcta-card:hover .pcta-go{gap:11px}
+#spa-cognitive .pcta-card{--pcta-accent:#082F6F}
+#spa-management .pcta-card{--pcta-accent:#3684FF;--pcta-pill:#2563EB}
+@media(max-width:640px){
+  .pcta-inner{padding:0 20px}
+  .pcta-card{flex-direction:column;align-items:flex-start;gap:18px;padding:26px 22px}
+  .pcta-go{align-self:stretch;justify-content:center}
+  .pcta-name{font-size:18px}
+}
+</style>
 
   <!-- ── SEO 기본 ── -->
   <meta name="keywords" content="인지경영, 경영전환, 중소기업 컨설팅, 조직진단, 실행력, 판단구조, 4축진단, NECX, BX Point, 경영컨설팅, 100인이하기업, 브레인통, BrainTONG" />
@@ -1734,6 +1990,9 @@
     <a href="#" onclick="spa.go('workshop');return false;" data-spa="workshop">워크숍</a>
     <a href="https://forms.gle/aYm1h6EeDBuS66xo7" target="_blank" rel="noopener" class="nav-cta">문의하기</a>
   </nav>
+  <button id="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </header>
 
 
@@ -2361,6 +2620,20 @@
   </div>
 </section>
 
+<!-- 파트너 연결 CTA — 메디브레인 -->
+<section class="pcta-sec">
+  <div class="pcta-inner">
+    <a href="https://www.medibrain.co.kr" target="_blank" rel="noopener" class="pcta-card">
+      <div class="pcta-meta">
+        <span class="pcta-eye">인지경영 기술 파트너</span>
+        <span class="pcta-name">메디브레인 <b>MediBrain</b></span>
+        <span class="pcta-desc">뇌과학·인지과학 기반 진단의 원천 기술을 함께 개발하는 파트너</span>
+      </div>
+      <span class="pcta-go">바로가기 →</span>
+    </a>
+  </div>
+</section>
+
 <!-- FOOTER -->
 
 
@@ -2907,6 +3180,20 @@
       </div>
       <span class="cta-note">초기 상담은 무료입니다 · 업종·규모에 맞게 맞춤 설계합니다</span>
     </div>
+  </div>
+</section>
+
+<!-- 파트너 연결 CTA — 경영전환전략연구소 통 -->
+<section class="pcta-sec">
+  <div class="pcta-inner">
+    <a href="https://www.workstong.com" target="_blank" rel="noopener" class="pcta-card">
+      <div class="pcta-meta">
+        <span class="pcta-eye">경영전환 실행 파트너</span>
+        <span class="pcta-name">경영전환전략연구소 <b>통(通)</b></span>
+        <span class="pcta-desc">진단에서 끝나지 않고, 구조 전환의 실행까지 함께 설계합니다</span>
+      </div>
+      <span class="pcta-go">바로가기 →</span>
+    </a>
   </div>
 </section>
 
@@ -3925,6 +4212,12 @@
         a.classList.toggle('active', a.dataset.spa === pid);
       });
 
+      // 모바일 메뉴 열려 있으면 닫기
+      var _nm = document.querySelector('.nav-menu');
+      var _nt = document.getElementById('nav-toggle');
+      if (_nm) _nm.classList.remove('open');
+      if (_nt) { _nt.classList.remove('open'); _nt.setAttribute('aria-expanded','false'); }
+
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
@@ -3946,6 +4239,17 @@
   document.addEventListener('DOMContentLoaded', function() {
     patchLinks();
     window.spa.go('home');
+    // 모바일 햄버거 토글
+    var navToggle = document.getElementById('nav-toggle');
+    var navMenu = document.querySelector('.nav-menu');
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', function() {
+        var open = navMenu.classList.toggle('open');
+        navToggle.classList.toggle('open', open);
+        navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        navToggle.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
+      });
+    }
   });
   // 동적으로 생성된 링크도 처리 (이벤트 위임)
   document.addEventListener('click', function(e) {
