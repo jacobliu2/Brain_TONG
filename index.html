@@ -300,11 +300,11 @@
 
     /* ── HERO ── */
     .hero{min-height:100vh;background:linear-gradient(155deg,#ffffff 0%,#EEF5FF 50%,#daeaff 100%);display:flex;align-items:center;padding:120px 0 80px;position:relative;overflow:hidden}
-    .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(54,132,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(54,132,255,.055) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 20%,transparent 100%)}
-    .hero-glow-l{position:absolute;left:-10%;top:20%;width:500px;height:500px;background:radial-gradient(circle,rgba(54,132,255,.08) 0%,transparent 65%);border-radius:50%}
+    .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(44,105,91,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(44,105,91,.055) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 20%,transparent 100%)}
+    .hero-glow-l{position:absolute;left:-10%;top:20%;width:500px;height:500px;background:radial-gradient(circle,rgba(44,105,91,.08) 0%,transparent 65%);border-radius:50%}
     .hero-glow-r{position:absolute;right:-5%;bottom:10%;width:400px;height:400px;background:radial-gradient(circle,rgba(8,47,111,.5) 0%,transparent 65%);border-radius:50%}
     .hero-inner{max-width:1160px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1.1fr .9fr;gap:72px;align-items:center;position:relative;z-index:1}
-    .hero-badge{display:inline-flex;align-items:center;gap:7px;padding:6px 14px;background:rgba(54,132,255,.09);border:1px solid rgba(54,132,255,.18);color:var(--blue-deep);font-size:12px;font-weight:700;border-radius:999px;letter-spacing:.06em;margin-bottom:28px}
+    .hero-badge{display:inline-flex;align-items:center;gap:7px;padding:6px 14px;background:rgba(44,105,91,.09);border:1px solid rgba(44,105,91,.18);color:var(--blue-deep);font-size:12px;font-weight:700;border-radius:999px;letter-spacing:.06em;margin-bottom:28px}
     .hero-badge::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--blue);animation:blink 2s infinite}
     @keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
     .hero h1{font-size:clamp(36px,4.2vw,58px);line-height:1.2;font-weight:800;color:var(--text);letter-spacing:-.04em;margin-bottom:24px}
@@ -320,8 +320,8 @@
     /* hero 우측 — 루프 다이어그램 */
     .hero-visual{display:flex;align-items:center;justify-content:center;position:relative}
     .loop-wrap{position:relative;width:300px;height:300px}
-    .loop-ring{position:absolute;inset:0;border-radius:50%;border:1.5px solid rgba(54,132,255,.15);animation:spin 18s linear infinite}
-    .loop-ring-2{position:absolute;inset:20px;border-radius:50%;border:1px solid rgba(54,132,255,.1);animation:spin 28s linear infinite reverse}
+    .loop-ring{position:absolute;inset:0;border-radius:50%;border:1.5px solid rgba(44,105,91,.15);animation:spin 18s linear infinite}
+    .loop-ring-2{position:absolute;inset:20px;border-radius:50%;border:1px solid rgba(44,105,91,.1);animation:spin 28s linear infinite reverse}
     @keyframes spin{to{transform:rotate(360deg)}}
     .loop-center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px}
     .loop-label{font-size:11px;font-weight:800;color:rgba(255,255,255,.4);letter-spacing:.14em}
@@ -337,9 +337,9 @@
     /* 3시 E */
     .node-e{top:50%;right:-28px;transform:translateY(-50%);background:rgba(13,37,80,.9);border-color:rgba(100,150,220,.4);color:#8BB4EE}
     /* 6시 C */
-    .node-c{bottom:-28px;left:50%;transform:translateX(-50%);background:rgba(27,73,162,.7);border-color:rgba(54,132,255,.5);color:#A0C0F8}
+    .node-c{bottom:-28px;left:50%;transform:translateX(-50%);background:rgba(27,73,162,.7);border-color:rgba(44,105,91,.5);color:#A0C0F8}
     /* 9시 X */
-    .node-x{top:50%;left:-28px;transform:translateY(-50%);background:rgba(54,132,255,.3);border-color:rgba(54,132,255,.5);color:#fff}
+    .node-x{top:50%;left:-28px;transform:translateY(-50%);background:rgba(44,105,91,.3);border-color:rgba(44,105,91,.5);color:#fff}
 
     /* ── 문제 정의 ── */
     .problem-sec{padding:100px 0}
@@ -370,7 +370,7 @@
     .necx-panel.active{display:grid;grid-template-columns:1fr 1fr;gap:20px;animation:fadeIn .3s ease}
     @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
     .necx-main{background:linear-gradient(140deg,var(--navy) 0%,var(--navy-mid) 100%);border-radius:24px;padding:44px;position:relative;overflow:hidden}
-    .necx-main::before{content:'';position:absolute;top:-60px;right:-60px;width:240px;height:240px;background:radial-gradient(circle,rgba(54,132,255,.2) 0%,transparent 70%);border-radius:50%}
+    .necx-main::before{content:'';position:absolute;top:-60px;right:-60px;width:240px;height:240px;background:radial-gradient(circle,rgba(44,105,91,.2) 0%,transparent 70%);border-radius:50%}
     .necx-step-badge{display:inline-block;padding:4px 12px;font-size:11px;font-weight:800;letter-spacing:.1em;border-radius:6px;background:rgba(255,255,255,.12);color:rgba(255,255,255,.8);border:1px solid rgba(255,255,255,.15);margin-bottom:20px}
     .necx-step-ttl{font-size:26px;font-weight:800;color:#fff;letter-spacing:-.035em;line-height:1.28;margin-bottom:6px}
     .necx-step-eng{font-size:12px;font-weight:700;color:rgba(255,255,255,.35);letter-spacing:.07em;margin-bottom:20px}
@@ -381,7 +381,7 @@
     .necx-side{display:grid;gap:12px}
     .necx-side-card{background:rgba(255,255,255,.65);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.5);border-radius:16px;padding:24px;cursor:pointer;transition:.2s}
     .necx-side-card:hover{background:rgba(255,255,255,.85);transform:translateX(4px)}
-    .necx-side-card.active{background:#fff;border-color:var(--blue);box-shadow:0 4px 16px rgba(54,132,255,.12)}
+    .necx-side-card.active{background:#fff;border-color:var(--blue);box-shadow:0 4px 16px rgba(44,105,91,.12)}
     .nsc-key{font-size:12px;font-weight:800;color:var(--blue);letter-spacing:.08em;margin-bottom:6px}
     .nsc-ttl{font-size:15px;font-weight:800;color:var(--text);letter-spacing:-.02em;margin-bottom:4px}
     .nsc-desc{font-size:13px;line-height:1.6;color:var(--text-3);font-weight:500}
@@ -1228,7 +1228,7 @@
 /* ===== BPI ===== */
 
   :root{
-    --blue:#2569D6; --blue-deep:#1B64DA; --blue-soft:#E8F2FF; --blue-bg:#F4F8FF;
+    --blue:#3684FF; --blue-deep:#1B64DA; --blue-soft:#E8F2FF; --blue-bg:#F4F8FF;
     --ink:#191F28; --ink-2:#333D4B; --ink-3:#4E5968; --ink-4:#6B7684; --ink-5:#8B95A1;
     --line:#E5E8EB; --line-soft:#F2F4F6; --bg:#FFFFFF; --bg-soft:#F9FAFB;
     --red:#E03131; --amber:#E8A700; --green:#1F9254;
@@ -1357,7 +1357,7 @@
 /* ===== BXPOINT ===== */
 
   :root{
-    --blue:#2569D6; --blue-deep:#1B64DA; --blue-soft:#E8F2FF; --blue-bg:#F4F8FF;
+    --blue:#3684FF; --blue-deep:#1B64DA; --blue-soft:#E8F2FF; --blue-bg:#F4F8FF;
     --ink:#191F28; --ink-2:#333D4B; --ink-3:#4E5968; --ink-4:#6B7684; --ink-5:#8B95A1;
     --line:#E5E8EB; --line-soft:#F2F4F6; --bg:#FFFFFF; --bg-soft:#F9FAFB;
     --red:#E03131; --amber:#E8A700; --green:#1F9254;
@@ -1910,6 +1910,138 @@
   .pcta-go{align-self:stretch;justify-content:center}
   .pcta-name{font-size:18px}
 }
+
+/* === 도메인색: 인지경영만 틸 스코프 === */
+#spa-cognitive{--blue:#2c695b;--blue-deep:#1f4e43;--blue-soft:#E3F1EC;--blue-bg:#EFF6F3}
+.hero h1 .hl{color:var(--blue)}
+
+#spa-cognitive .pcta-card{--pcta-accent:#2c695b}
+#spa-management .pcta-card{--pcta-accent:#3684FF;--pcta-pill:#2563EB}
+@media(max-width:640px){
+  .pcta-inner{padding:0 20px}
+  .pcta-card{flex-direction:column;align-items:flex-start;gap:18px;padding:26px 22px}
+  .pcta-go{align-self:stretch;justify-content:center}
+  .pcta-name{font-size:18px}
+}
+
+/* ── 히어로 정리: 깔끔·이니셔티브(전 페이지 공통) ── */
+.hero-grid{display:none !important}
+.hero-glow-l{opacity:.4}
+.hero-glow-r{display:none !important}
+.hero{min-height:auto !important;padding:84px 0 56px !important}
+.hero h1{line-height:1.14;letter-spacing:-.045em}
+.hero-desc{color:var(--text-3);font-weight:500}
+.hero-btns{gap:14px;margin-top:6px}
+.hero-btns .btn-w, .hero-btns .btn-p{background:var(--blue) !important;color:#fff !important;border:none !important;font-weight:800 !important;padding:16px 30px !important;box-shadow:0 10px 26px rgba(20,40,90,.14) !important}
+.hero-btns .btn-w:hover, .hero-btns .btn-p:hover{filter:brightness(1.06)}
+.hero-btns .btn-ghost, .hero-btns .btn-g{background:transparent !important;color:var(--text-3) !important;border:1px solid var(--line) !important;font-weight:600 !important;box-shadow:none !important}
+.hero-btns .btn-ghost:hover, .hero-btns .btn-g:hover{border-color:var(--blue) !important;color:var(--blue-deep) !important}
+
+
+/* ── 인지경영 히어로: 신경망(회전)+심전도(흐름) ── */
+
+.cx-neuro{position:relative;width:100%;max-width:600px;margin:0 auto;
+  filter:drop-shadow(0 8px 24px rgba(44,105,91,.12))}
+.cx-neuro-svg{width:100%;height:auto;display:block;overflow:visible}
+.cx-net{}
+@keyframes cxSpin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.cx-ecg{}
+@keyframes cxFlow{from{transform:translateX(0)}to{transform:translateX(-210px)}}
+@media(prefers-reduced-motion:reduce){.cx-net,.cx-ecg{animation:none}}
+@media(max-width:960px){.cx-neuro{max-width:420px;opacity:.9}}
+
+
+/* 인지경영: 좁은 화면(≤960px)에서도 신경망 그래픽 표시 — 텍스트 아래 세로 배치 */
+@media(max-width:960px){
+  #spa-cognitive .hero-visual{display:flex !important}
+  #spa-cognitive .hero-inner{grid-template-columns:1fr !important;gap:34px}
+  #spa-cognitive .cx-neuro{max-width:440px}
+}
+
+
+/* NECX 루프 하단 섹션 */
+.necx-loop-sec{padding:76px 0 20px;text-align:center}
+.necx-loop-sec .lp-eye{display:inline-block;font-size:13px;font-weight:800;letter-spacing:.09em;color:var(--blue)}
+.necx-loop-sec .lp-desc{margin:10px 0 0;font-size:15px;color:var(--text-3)}
+.necx-loop-sec .loop-wrap{margin:34px auto 0}
+
+
+/* 신경망 1.5배 확대 + 우측으로 이동 */
+@media(min-width:961px){
+  #spa-cognitive .hero-visual{overflow:visible}
+  #spa-cognitive .cx-neuro{max-width:none;width:205%;left:2%;transform:scale(1.5);transform-origin:left center}
+}
+@media(max-width:960px){
+  #spa-cognitive .cx-neuro{max-width:540px}
+}
+
+
+/* 전체 폭 심전도(양끝 그라데이션 페이드, 느린 흐름) */
+#spa-cognitive .hero-ecg{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);
+  height:150px;z-index:0;pointer-events:none;overflow:hidden;
+  -webkit-mask-image:linear-gradient(to right,transparent 0,#000 15%,#000 85%,transparent 100%);
+          mask-image:linear-gradient(to right,transparent 0,#000 15%,#000 85%,transparent 100%)}
+#spa-cognitive .hero-ecg svg{width:100%;height:100%;display:block}
+
+
+
+/* === 경영전환 히어로: 사선 바둑판 격자 + BX 곡선 === */
+#spa-management .hero{
+  background-image:
+    repeating-linear-gradient(45deg, rgba(54,132,255,.05) 0 1px, transparent 1px 46px),
+    repeating-linear-gradient(-45deg, rgba(54,132,255,.05) 0 1px, transparent 1px 46px) !important;
+}
+#spa-management .hero-visual{overflow:visible}
+.bx-hero-wrap{width:150%;max-width:none;margin-left:-8%}
+.bx-hero-svg{width:100%;height:auto;display:block;overflow:visible;
+  filter:drop-shadow(0 8px 22px rgba(54,132,255,.1))}
+@media(max-width:960px){.bx-hero-wrap{width:150%;max-width:none;margin-left:-8%}}
+
+
+/* BX 곡선: 우측 빗금영역 가득 채우기(좌측 텍스트 비침범) */
+#spa-management .hero-inner{grid-template-columns:1fr 1.45fr !important;gap:36px !important}
+#spa-management .hero-visual{overflow:visible;justify-content:flex-start;align-items:center}
+.bx-hero-wrap{width:190% !important;max-width:none !important;margin-left:0 !important;flex-shrink:0 !important}
+@media(max-width:960px){#spa-management .hero-inner{grid-template-columns:1fr !important}.bx-hero-wrap{width:120% !important}}
+
+
+/* 자가진단 히어로 좌측 정렬 */
+#spa-diagnosis .hero{text-align:left !important}
+#spa-diagnosis .hero-inner{align-items:flex-start}
+#spa-diagnosis .hero-desc,#spa-diagnosis .hero-note{margin-left:0;margin-right:auto}
+
+
+/* 자가진단 히어로: 좌측 텍스트(제목 위·설명 하단) + 우측 홈 비주얼 */
+#spa-diagnosis .diag-hero-inner{display:grid !important;grid-template-columns:1fr 1fr;gap:48px;align-items:stretch;max-width:1160px;margin:0 auto;padding:0 40px;text-align:left}
+#spa-diagnosis .diag-hero-text{display:flex;flex-direction:column;min-height:360px}
+#spa-diagnosis .diag-hero-text .hero-desc{margin-top:auto;margin-bottom:0}
+#spa-diagnosis .hero-visual{display:flex;align-items:center;justify-content:center;position:relative;min-height:360px}
+@media(max-width:960px){#spa-diagnosis .diag-hero-inner{grid-template-columns:1fr}#spa-diagnosis .diag-hero-text{min-height:auto}#spa-diagnosis .hero-visual{display:none}}
+
+
+/* 자가진단 제목 2줄 고정 */
+#spa-diagnosis .diag-hero-inner{grid-template-columns:1.15fr 0.85fr !important}
+#spa-diagnosis .diag-hero-text h1{white-space:nowrap;font-size:clamp(30px,3.3vw,48px)}
+/* 자가진단 로고 + 중심 빛 새어나옴 */
+#spa-diagnosis .diag-logo-wrap{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:6;width:170px;height:170px;display:flex;align-items:center;justify-content:center}
+#spa-diagnosis .diag-logo{width:150px;height:auto;position:relative;z-index:3;filter:drop-shadow(0 6px 18px rgba(8,47,111,.25))}
+#spa-diagnosis .diag-light{position:absolute;width:230px;height:230px;border-radius:50%;z-index:1;
+  background:radial-gradient(circle, rgba(54,132,255,.5) 0%, rgba(54,132,255,.14) 42%, transparent 70%);
+  filter:blur(6px);animation:diagLeak 3.2s ease-in-out infinite}
+#spa-diagnosis .diag-light-core{position:absolute;width:90px;height:90px;border-radius:50%;z-index:2;
+  background:radial-gradient(circle, rgba(255,255,255,.85) 0%, rgba(120,180,255,.5) 45%, transparent 72%);
+  filter:blur(3px);animation:diagLeakCore 2.2s ease-in-out infinite}
+@keyframes diagLeak{0%,100%{opacity:.35;transform:scale(.82)}50%{opacity:.85;transform:scale(1.15)}}
+@keyframes diagLeakCore{0%,100%{opacity:.4;transform:scale(.7)}50%{opacity:.95;transform:scale(1.1)}}
+
+
+/* 워크숍 히어로: 좌측 콘텐츠 + 우측 선율 애니 */
+#spa-workshop .ws-hero-inner{display:grid !important;grid-template-columns:0.82fr 1.18fr;gap:36px;align-items:center;max-width:1220px;margin:0 auto;padding:0 40px;text-align:left}
+#spa-workshop .ws-hero-text{display:flex;flex-direction:column;gap:22px}
+#spa-workshop .ws-melody{display:flex;align-items:flex-end;justify-content:flex-end;position:relative;min-height:580px;overflow:visible}
+#spa-workshop .ws-melody-svg{width:100%;max-width:760px;height:auto;transform:translate(22px,18px)}
+@media(max-width:960px){#spa-workshop .ws-hero-inner{display:grid !important;grid-template-columns:0.82fr 1.18fr;gap:36px;align-items:center;max-width:1220px;margin:0 auto;padding:0 40px;text-align:left}#spa-workshop .ws-melody{display:flex;align-items:flex-end;justify-content:flex-end;position:relative;min-height:580px;overflow:visible}}
+
 </style>
 
   <!-- ── SEO 기본 ── -->
@@ -2199,6 +2331,7 @@
   <div class="hero-grid"></div>
   <div class="hero-glow-l"></div>
   <div class="hero-glow-r"></div>
+  <div class="hero-ecg"><svg viewBox="0 0 1700 150" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><g class="cx-ecg2"><animateTransform attributeName="transform" attributeType="XML" type="translate" from="0 0" to="-1350 0" dur="12s" repeatCount="indefinite"/><path d="M 0,78 L 78,78 Q 94,69 110,78 L 120,78 L 125,87 L 132,26 L 139,102 L 146,78 Q 172,63 200,78 L 230,78 L 295,69 Q 308,60 321,69 L 329,69 L 334,78 L 339,-9 L 345,101 L 351,69 Q 372,47 395,69 L 420,69 L 512,85 Q 531,76 550,85 L 560,85 L 567,94 L 575,53 L 583,100 L 591,85 Q 622,74 655,85 L 690,85 L 761,73 Q 776,64 791,73 L 799,73 L 804,82 L 811,11 L 817,101 L 823,73 Q 848,56 873,73 L 900,73 L 985,89 Q 1002,80 1020,89 L 1030,89 L 1036,98 L 1044,45 L 1051,109 L 1059,89 Q 1088,76 1118,89 L 1150,89 L 1218,67 Q 1232,58 1246,67 L 1254,67 L 1259,76 L 1265,-19 L 1271,103 L 1277,67 Q 1300,43 1324,67 L 1350,67 L 1428,78 Q 1444,69 1460,78 L 1470,78 L 1475,87 L 1482,26 L 1489,102 L 1496,78 Q 1522,63 1550,78 L 1580,78 L 1645,69 Q 1658,60 1671,69 L 1679,69 L 1684,78 L 1689,-9 L 1695,101 L 1701,69 Q 1722,47 1745,69 L 1770,69 L 1862,85 Q 1881,76 1900,85 L 1910,85 L 1917,94 L 1925,53 L 1933,100 L 1941,85 Q 1972,74 2005,85 L 2040,85 L 2111,73 Q 2126,64 2141,73 L 2149,73 L 2154,82 L 2161,11 L 2167,101 L 2173,73 Q 2198,56 2223,73 L 2250,73 L 2335,89 Q 2352,80 2370,89 L 2380,89 L 2386,98 L 2394,45 L 2401,109 L 2409,89 Q 2438,76 2468,89 L 2500,89 L 2568,67 Q 2582,58 2596,67 L 2604,67 L 2609,76 L 2615,-19 L 2621,103 L 2627,67 Q 2650,43 2674,67 L 2700,67 L 2778,78 Q 2794,69 2810,78 L 2820,78 L 2825,87 L 2832,26 L 2839,102 L 2846,78 Q 2872,63 2900,78 L 2930,78 L 2995,69 Q 3008,60 3021,69 L 3029,69 L 3034,78 L 3039,-9 L 3045,101 L 3051,69 Q 3072,47 3095,69 L 3120,69 L 3212,85 Q 3231,76 3250,85 L 3260,85 L 3267,94 L 3275,53 L 3283,100 L 3291,85 Q 3322,74 3355,85 L 3390,85 " fill="none" stroke="#1E3A66" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" opacity=".12"/></g></svg></div>
   <div class="hero-inner">
     <div>
       <div class="hero-badge">NECX™ · 구조실행 클리닉</div>
@@ -2210,21 +2343,7 @@
       </div>
     </div>
     <div class="hero-visual">
-      <div class="loop-wrap">
-        <div class="loop-ring"></div>
-        <div class="loop-ring-2"></div>
-        <div class="loop-nodes">
-          <div class="loop-node node-n"><span class="n-key">N</span><span class="n-lbl">NEURO</span></div>
-          <div class="loop-node node-e"><span class="n-key">E</span><span class="n-lbl">EXEC</span></div>
-          <div class="loop-node node-c"><span class="n-key">C</span><span class="n-lbl">CORRECT</span></div>
-          <div class="loop-node node-x"><span class="n-key">X</span><span class="n-lbl">SYSTEM</span></div>
-        </div>
-        <div class="loop-center">
-          <span class="loop-label">EXECUTION</span>
-          <span class="loop-main">LOOP</span>
-          <span class="loop-sub">NECX™</span>
-        </div>
-      </div>
+      <div class="cx-neuro"><svg class="cx-neuro-svg" viewBox="0 0 820 600" xmlns="http://www.w3.org/2000/svg"><g class="cx-net"><defs><filter id="cxglow" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g class="cx-lines" stroke="#2c695b" stroke-width="0.9" fill="none"><line x1="77.0" y1="236.7" x2="101.8" y2="422.7" opacity="0.26"></line><line x1="235.0" y1="135.4" x2="110.8" y2="107.0" opacity="0.26"/><line x1="523.6" y1="117.8" x2="698.7" y2="79.0" opacity="0.26"></line><line x1="523.6" y1="117.8" x2="404.6" y2="70.0" opacity="0.26"></line><line x1="411.1" y1="207.8" x2="404.6" y2="70.0" opacity="0.26"></line><line x1="193.7" y1="332.1" x2="303.0" y2="272.7" opacity="0.26"></line><line x1="733.7" y1="326.1" x2="616.9" y2="255.8" opacity="0.26"></line><line x1="425.5" y1="420.1" x2="535.2" y2="496.4" opacity="0.26"></line><line x1="597.3" y1="375.6" x2="616.9" y2="255.8" opacity="0.26"></line><line x1="597.3" y1="375.6" x2="535.2" y2="496.4" opacity="0.26"></line><line x1="101.8" y1="422.7" x2="193.7" y2="332.1" opacity="0.26"></line><line x1="678.2" y1="485.2" x2="535.2" y2="496.4" opacity="0.26"></line><line x1="77.0" y1="236.7" x2="193.7" y2="332.1" opacity="0.26"/><line x1="411.1" y1="207.8" x2="303.0" y2="272.7" opacity="0.26"/><line x1="425.5" y1="420.1" x2="307.7" y2="486.4" opacity="0.26"/><line x1="734.2" y1="195.7" x2="733.7" y2="326.1" opacity="0.26"></line><line x1="734.2" y1="195.7" x2="616.9" y2="255.8" opacity="0.26"></line><line x1="523.6" y1="117.8" x2="411.1" y2="207.8" opacity="0.26"/><line x1="77.0" y1="236.7" x2="110.8" y2="107.0" opacity="0.26"/><line x1="303.0" y1="272.7" x2="235.0" y2="135.4" opacity="0.26"></line><line x1="734.2" y1="195.7" x2="698.7" y2="79.0" opacity="0.26"></line><line x1="597.3" y1="375.6" x2="678.2" y2="485.2" opacity="0.26"></line><line x1="307.7" y1="486.4" x2="193.7" y2="332.1" opacity="0.26"/></g><g class="cx-rings"><circle cx="698.7" cy="79.0" r="15" fill="none" stroke="#3f8375" stroke-width="1.2" opacity="0"><animate attributeName="r" values="15;43" dur="4.2s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values=".4;0" dur="4.2s" begin="0s" repeatCount="indefinite"/></circle><circle cx="523.6" cy="117.8" r="15" fill="none" stroke="#3f8375" stroke-width="1.2" opacity="0"><animate attributeName="r" values="15;43" dur="4.2s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values=".4;0" dur="4.2s" begin="0s" repeatCount="indefinite"/></circle><circle cx="101.8" cy="422.7" r="15" fill="none" stroke="#3f8375" stroke-width="1.2" opacity="0"><animate attributeName="r" values="15;43" dur="4.2s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values=".4;0" dur="4.2s" begin="0s" repeatCount="indefinite"/></circle></g><g class="cx-dots"><circle cx="425.5" cy="420.1" r="8" fill="#2c695b" opacity="0.88"><animate attributeName="r" values="8;9.9;8" dur="3.18s" begin="0s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/></circle><circle cx="734.2" cy="195.7" r="6" fill="#2c695b" opacity="0.7"><animate attributeName="opacity" values="0.35;0.85;0.35" dur="2.76s" begin="0s" repeatCount="indefinite"/></circle><circle cx="597.3" cy="375.6" r="11" fill="#2c695b" opacity="0.88"><animate attributeName="r" values="11;12.7;11" dur="2.96s" begin="0s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/></circle><circle cx="523.6" cy="117.8" r="23" fill="#3f8375" opacity="0.12"/><circle cx="523.6" cy="117.8" r="15" fill="#3f8375" filter="url(#cxglow)"><animate attributeName="r" values="15;17.7;15" dur="3.01s" begin="0s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/></circle><circle cx="523.6" cy="117.8" r="6.0" fill="#eaf5f1" opacity=".92"/><circle cx="77.0" cy="236.7" r="5" fill="none" stroke="#2c695b" stroke-width="1.6" opacity="0.7"><animate attributeName="opacity" values="0.38;0.82;0.38" dur="3.9s" begin="0s" repeatCount="indefinite"/></circle><circle cx="411.1" cy="207.8" r="4" fill="#2c695b" opacity="0.7"><animate attributeName="opacity" values="0.35;0.85;0.35" dur="2.97s" begin="0s" repeatCount="indefinite"/></circle><circle cx="101.8" cy="422.7" r="23" fill="#3f8375" opacity="0.12"/><circle cx="101.8" cy="422.7" r="15" fill="#3f8375" filter="url(#cxglow)"><animate attributeName="r" values="15;17.8;15" dur="2.57s" begin="0s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/></circle><circle cx="101.8" cy="422.7" r="6.0" fill="#eaf5f1" opacity=".92"/><circle cx="307.7" cy="486.4" r="9" fill="none" stroke="#2c695b" stroke-width="1.6" opacity="0.7"><animate attributeName="opacity" values="0.38;0.82;0.38" dur="3.57s" begin="0s" repeatCount="indefinite"/></circle><circle cx="193.7" cy="332.1" r="8" fill="none" stroke="#2c695b" stroke-width="1.6" opacity="0.7"><animate attributeName="opacity" values="0.38;0.82;0.38" dur="3.38s" begin="0s" repeatCount="indefinite"/></circle><circle cx="303.0" cy="272.7" r="8" fill="none" stroke="#2c695b" stroke-width="1.6" opacity="0.7"><animate attributeName="opacity" values="0.38;0.82;0.38" dur="2.65s" begin="0s" repeatCount="indefinite"/></circle><circle cx="698.7" cy="79.0" r="23" fill="#2c695b" opacity="0.12"/><circle cx="698.7" cy="79.0" r="15" fill="#2c695b" filter="url(#cxglow)"><animate attributeName="r" values="15;18.5;15" dur="3.13s" begin="0s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/></circle><circle cx="698.7" cy="79.0" r="6.0" fill="#eaf5f1" opacity=".92"/><circle cx="733.7" cy="326.1" r="15" fill="none" stroke="#2c695b" stroke-width="1.6" opacity="0.7"><animate attributeName="opacity" values="0.38;0.82;0.38" dur="3.24s" begin="0s" repeatCount="indefinite"/></circle><circle cx="235.0" cy="135.4" r="13" fill="none" stroke="#2c695b" stroke-width="1.6" opacity="0.7"><animate attributeName="opacity" values="0.38;0.82;0.38" dur="3.29s" begin="0s" repeatCount="indefinite"/></circle><circle cx="110.8" cy="107.0" r="6" fill="none" stroke="#2c695b" stroke-width="1.6" opacity="0.7"><animate attributeName="opacity" values="0.38;0.82;0.38" dur="3.8s" begin="0s" repeatCount="indefinite"/></circle><circle cx="616.9" cy="255.8" r="8" fill="#2c695b" opacity="0.88"><animate attributeName="r" values="8;9.2;8" dur="2.54s" begin="0s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/></circle><circle cx="678.2" cy="485.2" r="6" fill="none" stroke="#2c695b" stroke-width="1.6" opacity="0.7"><animate attributeName="opacity" values="0.38;0.82;0.38" dur="2.94s" begin="0s" repeatCount="indefinite"/></circle><circle cx="404.6" cy="70.0" r="13" fill="#2c695b" opacity="0.88"><animate attributeName="r" values="13;15.8;13" dur="3.05s" begin="0s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/></circle><circle cx="535.2" cy="496.4" r="4" fill="#2c695b" opacity="0.7"><animate attributeName="opacity" values="0.35;0.85;0.35" dur="2.81s" begin="0s" repeatCount="indefinite"/></circle></g></g></svg></div>
     </div>
   </div>
 </section>
@@ -2604,6 +2723,29 @@
   </div>
 </section>
 
+<!-- NECX 실행 루프 -->
+<section class="necx-loop-sec">
+  <div style="max-width:1160px;margin:0 auto;padding:0 40px;text-align:center">
+    <span class="lp-eye">NECX&trade; EXECUTION LOOP</span>
+    <p class="lp-desc">판단이 실행으로 도는 네 단계 — 신경(N)·실행(E)·교정(C)·시스템(X)</p>
+    <div class="loop-wrap">
+        <div class="loop-ring"></div>
+        <div class="loop-ring-2"></div>
+        <div class="loop-nodes">
+          <div class="loop-node node-n"><span class="n-key">N</span><span class="n-lbl">NEURO</span></div>
+          <div class="loop-node node-e"><span class="n-key">E</span><span class="n-lbl">EXEC</span></div>
+          <div class="loop-node node-c"><span class="n-key">C</span><span class="n-lbl">CORRECT</span></div>
+          <div class="loop-node node-x"><span class="n-key">X</span><span class="n-lbl">SYSTEM</span></div>
+        </div>
+        <div class="loop-center">
+          <span class="loop-label">EXECUTION</span>
+          <span class="loop-main">LOOP</span>
+          <span class="loop-sub">NECX™</span>
+        </div>
+      </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="cta-sec">
   <div class="cta-inner">
@@ -2659,20 +2801,62 @@
       </div>
     </div>
     <div class="hero-visual">
-      <div class="axis-diagram">
-        <div class="axis-ring"></div>
-        <div class="axis-ring-2"></div>
-        <div class="axis-cross"></div>
-        <div class="axis-node node-인"><span class="a-char">人</span><span class="a-lbl">조직</span></div>
-        <div class="axis-node node-영"><span class="a-char">營</span><span class="a-lbl">운영</span></div>
-        <div class="axis-node node-재"><span class="a-char">財</span><span class="a-lbl">재무</span></div>
-        <div class="axis-node node-산"><span class="a-char">産</span><span class="a-lbl">시장</span></div>
-        <div class="axis-center">
-          <span class="axis-center-lbl">4-AXIS</span>
-          <span class="axis-center-main">진단</span>
-          <span class="axis-center-sub">DIAGNOSIS</span>
-        </div>
-      </div>
+      <div class="bx-hero-wrap"><svg class="bx-hero-svg" viewBox="0 0 900 380" xmlns="http://www.w3.org/2000/svg" aria-label="ABCDE 사이클 다이어그램">
+        <defs>
+          <marker id="arr-blue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 z" fill="#3684FF"/>
+          </marker>
+          <marker id="arr-red" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 z" fill="#E05050"/>
+          </marker>
+          <marker id="arr-gray" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 z" fill="#8A9BB8"/>
+          </marker>
+        </defs>
+
+        <!-- Entropy 수평선 (배경) -->
+        <line x1="40" y1="190" x2="860" y2="190" stroke="#E2EAF6" stroke-width="1.5" stroke-dasharray="6,4" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.1s" fill="freeze"/></line>
+        <text x="46" y="183" font-size="11" fill="#8A9BB8" font-family="'Noto Sans KR',sans-serif" font-weight="600" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.3s" fill="freeze"/>Entropy</text>
+        <!-- 우측 Entropy 라벨 3개 -->
+        <text x="760" y="145" font-size="10" fill="#8A9BB8" font-family="'Noto Sans KR',sans-serif" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.3s" fill="freeze"/>Entropy</text>
+        <text x="760" y="195" font-size="10" fill="#8A9BB8" font-family="'Noto Sans KR',sans-serif" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.3s" fill="freeze"/>Entropy</text>
+        <text x="760" y="290" font-size="10" fill="#8A9BB8" font-family="'Noto Sans KR',sans-serif" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.3s" fill="freeze"/>Entropy</text>
+
+        <!-- 기업 성장곡선 (아래→위 S커브) -->
+        <path d="M 40 310 C 100 310, 150 280, 200 240 C 250 200, 270 190, 320 190 C 370 190, 420 185, 500 185 C 540 185, 560 184, 580 184" stroke="#3684FF" stroke-width="2.5" fill="none" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" from="1" to="0" dur="0.9s" begin="0.2s" fill="freeze"/></path>
+        <text x="44" y="328" font-size="11" fill="#3684FF" font-family="'Noto Sans KR',sans-serif" font-weight="600" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.3s" fill="freeze"/>기업 성장곡선</text>
+
+        <!-- A — 자각 포인트 -->
+        <circle cx="320" cy="190" r="7" fill="#3684FF" opacity=".5"/>
+        <circle cx="320" cy="190" r="4" fill="#3684FF" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.9s" fill="freeze"/></circle>
+        <text x="308" y="170" font-size="11" fill="#4A5E7A" font-family="'Noto Sans KR',sans-serif" font-weight="700" text-anchor="middle" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.3s" fill="freeze"/>자각</text>
+        <text x="308" y="158" font-size="12" fill="#3684FF" font-family="'Noto Sans KR',sans-serif" font-weight="800" text-anchor="middle" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.3s" fill="freeze"/>Awareness</text>
+
+        <!-- B — BX Point (전환점) -->
+        <circle cx="580" cy="184" r="20" fill="#3684FF" opacity=".12"/>
+        <circle cx="580" cy="184" r="13" fill="#3684FF" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="0.9s" fill="freeze"/></circle>
+        <text x="580" y="158" font-size="11" fill="#4A5E7A" font-family="'Noto Sans KR',sans-serif" font-weight="700" text-anchor="middle" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.3s" fill="freeze"/>전환점</text>
+        <text x="580" y="145" font-size="12" fill="#3684FF" font-family="'Noto Sans KR',sans-serif" font-weight="800" text-anchor="middle" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.3s" fill="freeze"/>BX Point</text>
+
+        <!-- C — 전환 (위로) -->
+        <path d="M 593 172 C 620 140, 660 110, 720 90" stroke="#3684FF" stroke-width="2.5" fill="none" marker-end="url(#arr-blue)" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" from="1" to="0" dur="0.9s" begin="1.1s" fill="freeze"/></path>
+        <text x="720" y="85" font-size="11" fill="#4A5E7A" font-family="'Noto Sans KR',sans-serif" font-weight="700" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.3s" fill="freeze"/>전환</text>
+        <text x="720" y="72" font-size="12" fill="#3684FF" font-family="'Noto Sans KR',sans-serif" font-weight="800" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.3s" fill="freeze"/>Conversion</text>
+
+        <!-- D — 쇠퇴 (아래로) -->
+        <path d="M 590 196 C 615 225, 650 260, 700 285" stroke="#E05050" stroke-width="2.5" fill="none" marker-end="url(#arr-red)" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" from="1" to="0" dur="0.9s" begin="1.1s" fill="freeze"/></path>
+        <text x="678" y="305" font-size="12" fill="#E05050" font-family="'Noto Sans KR',sans-serif" font-weight="800" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.3s" fill="freeze"/>Decline</text>
+        <text x="686" y="318" font-size="11" fill="#4A5E7A" font-family="'Noto Sans KR',sans-serif" font-weight="700" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.3s" fill="freeze"/>쇠퇴</text>
+
+        <!-- 유지 (수평) -->
+        <path d="M 593 184 L 755 184" stroke="#8A9BB8" stroke-width="1.5" fill="none" stroke-dasharray="4,3" marker-end="url(#arr-gray)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.9s" begin="1.1s" fill="freeze"/></path>
+        <text x="660" y="175" font-size="10" fill="#8A9BB8" font-family="'Noto Sans KR',sans-serif" font-weight="600" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" begin="1.3s" fill="freeze"/>유지</text>
+
+        <!-- E — 엔트로피 순환 화살표 (양쪽) -->
+        <path d="M 840 90 C 870 115, 870 155, 840 160" stroke="#E2EAF6" stroke-width="1.5" fill="none" stroke-dasharray="4,3" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.9s" begin="1.1s" fill="freeze"/></path>
+        <path d="M 840 188 C 870 195, 870 230, 840 260" stroke="#E2EAF6" stroke-width="1.5" fill="none" stroke-dasharray="4,3" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.9s" begin="1.1s" fill="freeze"/></path>
+        <path d="M 840 285 C 870 300, 870 325, 840 340" stroke="#E2EAF6" stroke-width="1.5" fill="none" stroke-dasharray="4,3" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.9s" begin="1.1s" fill="freeze"/></path>
+      </svg></div>
     </div>
   </div>
 </section>
@@ -3209,11 +3393,66 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-grid"></div>
-  <div class="hero-inner">
-    <div class="hero-badge">무료 자가진단 · 5분 내 완료</div>
-    <h1>우리 조직은 지금<br/><span class="cn">어디에서</span> <span class="cb">막혀 있습니까?</span></h1>
-    <p class="hero-desc">판단 구조가 문제인지 경영 구조가 문제인지<br/><b>두 개의 진단으로 정확히 찾아냅니다.</b></p>
-    <p class="hero-note">각 진단은 5분 내 완료 · 별도 회원가입 불필요 · 진단 완료 후 상담 신청 가능</p>
+  <div class="hero-inner diag-hero-inner">
+    <div class="diag-hero-text">
+      <h1>우리 조직은 지금<br/><span class="cn">어디에서</span> <span class="cb">막혀 있습니까?</span></h1>
+      <p class="hero-desc">판단 구조가 문제인지 경영 구조가 문제인지<br/><b>두 개의 진단으로 정확히 찾아냅니다.</b></p>
+    </div>
+    <div class="hero-visual">
+      <div class="diag-logo-wrap">
+        <div class="diag-light"></div>
+        <div class="diag-light-core"></div>
+        <svg class="diag-logo" xmlns="http://www.w3.org/2000/svg" width="150" height="92" viewBox="170 180 920 560">
+      <defs><linearGradient id="lgDiag" x1="170" y1="0" x2="1110" y2="0" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#082F6F"/><stop offset="0.55" stop-color="#1B64DA"/><stop offset="1" stop-color="#3684FF"/>
+      </linearGradient></defs>
+      <path d="M 691 232 L 673 240 L 657 254 L 647 271 L 643 287 L 643 411 L 689 445 L 689 641 L 732 691 L 750 697 L 775 701 L 809 701 L 834 697 L 857 690 L 887 675 L 910 658 L 927 641 L 938 627 L 956 594 L 966 562 L 970 532 L 968 492 L 959 458 L 941 425 L 923 406 L 914 399 L 911 374 L 901 348 L 886 326 L 871 311 L 859 302 L 838 291 L 818 285 L 800 283 L 791 267 L 776 251 L 751 236 L 722 229 L 708 229 Z M 569 233 L 557 230 L 538 229 L 519 232 L 500 239 L 480 252 L 471 261 L 456 284 L 440 285 L 422 290 L 403 299 L 385 312 L 365 334 L 353 355 L 345 380 L 343 399 L 333 407 L 314 428 L 296 463 L 290 484 L 287 504 L 287 538 L 291 564 L 301 595 L 310 613 L 324 634 L 347 658 L 379 680 L 404 691 L 435 699 L 455 701 L 487 700 L 519 693 L 526 689 L 567 641 L 567 445 L 614 411 L 614 288 L 612 277 L 601 255 L 587 242 Z M 343 531 L 347 521 L 353 515 L 363 511 L 370 511 L 379 515 L 388 527 L 485 528 L 530 553 L 530 564 L 526 565 L 481 540 L 388 540 L 386 546 L 378 554 L 370 557 L 361 557 L 354 554 L 346 546 Z M 374 433 L 381 426 L 387 423 L 394 422 L 406 426 L 414 435 L 416 449 L 452 486 L 491 488 L 527 509 L 530 512 L 530 523 L 528 524 L 486 500 L 448 499 L 411 461 L 399 468 L 384 467 L 374 458 L 371 452 L 371 439 Z M 913 528 L 913 539 L 910 546 L 903 553 L 897 556 L 884 556 L 878 553 L 871 546 L 869 540 L 775 540 L 729 565 L 727 564 L 727 553 L 772 528 L 869 528 L 872 521 L 878 515 L 885 512 L 897 512 L 902 514 L 908 519 Z M 421 349 L 431 344 L 439 344 L 445 346 L 454 354 L 458 364 L 456 377 L 496 407 L 496 439 L 534 463 L 537 466 L 537 476 L 535 478 L 485 447 L 484 413 L 449 387 L 439 390 L 430 390 L 423 387 L 416 380 L 413 374 L 412 365 L 416 354 Z M 883 433 L 886 440 L 886 451 L 882 459 L 874 466 L 869 468 L 858 468 L 845 461 L 808 499 L 773 499 L 729 524 L 727 523 L 727 512 L 767 488 L 804 487 L 841 450 L 842 438 L 845 432 L 853 425 L 858 423 L 869 423 L 876 426 Z M 836 349 L 844 361 L 844 373 L 840 381 L 833 387 L 824 390 L 815 389 L 809 386 L 773 412 L 772 446 L 762 454 L 721 478 L 720 466 L 723 463 L 761 439 L 761 406 L 801 377 L 799 365 L 803 354 L 809 348 L 820 344 L 828 345 Z M 530 575 L 530 584 L 528 586 L 462 587 L 437 608 L 437 624 L 434 630 L 424 638 L 416 640 L 406 638 L 397 631 L 393 624 L 392 614 L 394 607 L 403 597 L 410 594 L 420 594 L 430 598 L 461 573 L 528 573 Z M 511 297 L 524 296 L 531 299 L 538 306 L 541 313 L 541 325 L 539 330 L 534 336 L 525 341 L 525 384 L 572 416 L 572 424 L 569 427 L 566 427 L 516 393 L 513 389 L 513 341 L 506 338 L 499 331 L 496 322 L 496 315 L 500 305 Z M 746 297 L 754 302 L 758 307 L 761 320 L 756 333 L 743 342 L 743 390 L 704 418 L 688 427 L 686 425 L 686 416 L 690 412 L 732 384 L 732 341 L 726 338 L 719 331 L 716 324 L 716 313 L 720 305 L 728 298 L 734 296 Z M 727 574 L 796 573 L 827 599 L 838 594 L 846 594 L 855 598 L 862 606 L 864 612 L 863 625 L 860 630 L 850 638 L 833 638 L 828 635 L 820 625 L 820 608 L 793 585 L 728 585 Z M 674 445 L 674 621 L 679 628 L 681 629 L 681 449 L 677 446 Z M 582 445 L 576 449 L 576 628 L 577 628 L 582 622 Z" fill="url(#lgDiag)" fill-rule="evenodd"/>
+    </svg>
+      </div>
+      <div class="h-ring h-ring-3"></div>
+      <div class="h-ring h-ring-2"></div>
+      <div class="h-ring h-ring-1"></div>
+      <div class="h-glow"></div>
+
+      <!-- 인지경영 단어 회전 링 (안쪽, 시계방향) -->
+      <div class="wm-ring wm-ring-1">
+        <svg viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <path id="wm-circle-1" d="M 180,180 m -155,0 a 155,155 0 1,1 310,0 a 155,155 0 1,1 -310,0"/>
+          </defs>
+          <text font-size="11" font-weight="700" letter-spacing="3" fill="rgba(8,47,111,0.13)" font-family="'Noto Sans KR',sans-serif">
+            <textPath href="#wm-circle-1">
+              판단 · NECX™ · 인지경영 · 실행루프 · 뇌기반 · 의사결정 · 인지부하 · 판단 · NECX™ · 인지경영 · 실행루프 · 뇌기반 · 의사결정 · 인지부하 ·
+            </textPath>
+          </text>
+        </svg>
+      </div>
+
+      <!-- 경영전환 단어 회전 링 (바깥, 반시계방향) -->
+      <div class="wm-ring wm-ring-2">
+        <svg viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <path id="wm-circle-2" d="M 240,240 m -205,0 a 205,205 0 1,1 410,0 a 205,205 0 1,1 -410,0"/>
+          </defs>
+          <text font-size="11" font-weight="700" letter-spacing="3" fill="rgba(54,132,255,0.1)" font-family="'Noto Sans KR',sans-serif">
+            <textPath href="#wm-circle-2">
+              경영전환 · BX Point · 4축진단 · 人營財産 · ABCDE · 전환점 · 엔트로피 · 자각 · 경영전환 · BX Point · 4축진단 · 人營財産 · ABCDE · 전환점 · 엔트로피 · 자각 ·
+            </textPath>
+          </text>
+        </svg>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="170 130 920 640" aria-label="BrainTONG" style="position:relative;z-index:1">
+        <defs>
+          <linearGradient id="lgHero" x1="170" y1="0" x2="1110" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="rgba(8,47,111,0.85)"/>
+            <stop offset="0.5" stop-color="rgba(27,100,218,0.95)"/>
+            <stop offset="1" stop-color="rgba(54,132,255,1)"/>
+          </linearGradient>
+        </defs>
+        <path d="M 691 232 L 673 240 L 657 254 L 647 271 L 643 287 L 643 411 L 689 445 L 689 641 L 732 691 L 750 697 L 775 701 L 809 701 L 834 697 L 857 690 L 887 675 L 910 658 L 927 641 L 938 627 L 956 594 L 966 562 L 970 532 L 968 492 L 959 458 L 941 425 L 923 406 L 914 399 L 911 374 L 901 348 L 886 326 L 871 311 L 859 302 L 838 291 L 818 285 L 800 283 L 791 267 L 776 251 L 751 236 L 722 229 L 708 229 Z M 569 233 L 557 230 L 538 229 L 519 232 L 500 239 L 480 252 L 471 261 L 456 284 L 440 285 L 422 290 L 403 299 L 385 312 L 365 334 L 353 355 L 345 380 L 343 399 L 333 407 L 314 428 L 296 463 L 290 484 L 287 504 L 287 538 L 291 564 L 301 595 L 310 613 L 324 634 L 347 658 L 379 680 L 404 691 L 435 699 L 455 701 L 487 700 L 519 693 L 526 689 L 567 641 L 567 445 L 614 411 L 614 288 L 612 277 L 601 255 L 587 242 Z M 343 531 L 347 521 L 353 515 L 363 511 L 370 511 L 379 515 L 388 527 L 485 528 L 530 553 L 530 564 L 526 565 L 481 540 L 388 540 L 386 546 L 378 554 L 370 557 L 361 557 L 354 554 L 346 546 Z M 374 433 L 381 426 L 387 423 L 394 422 L 406 426 L 414 435 L 416 449 L 452 486 L 491 488 L 527 509 L 530 512 L 530 523 L 528 524 L 486 500 L 448 499 L 411 461 L 399 468 L 384 467 L 374 458 L 371 452 L 371 439 Z M 913 528 L 913 539 L 910 546 L 903 553 L 897 556 L 884 556 L 878 553 L 871 546 L 869 540 L 775 540 L 729 565 L 727 564 L 727 553 L 772 528 L 869 528 L 872 521 L 878 515 L 885 512 L 897 512 L 902 514 L 908 519 Z M 421 349 L 431 344 L 439 344 L 445 346 L 454 354 L 458 364 L 456 377 L 496 407 L 496 439 L 534 463 L 537 466 L 537 476 L 535 478 L 485 447 L 484 413 L 449 387 L 439 390 L 430 390 L 423 387 L 416 380 L 413 374 L 412 365 L 416 354 Z M 883 433 L 886 440 L 886 451 L 882 459 L 874 466 L 869 468 L 858 468 L 845 461 L 808 499 L 773 499 L 729 524 L 727 523 L 727 512 L 767 488 L 804 487 L 841 450 L 842 438 L 845 432 L 853 425 L 858 423 L 869 423 L 876 426 Z M 836 349 L 844 361 L 844 373 L 840 381 L 833 387 L 824 390 L 815 389 L 809 386 L 773 412 L 772 446 L 762 454 L 721 478 L 720 466 L 723 463 L 761 439 L 761 406 L 801 377 L 799 365 L 803 354 L 809 348 L 820 344 L 828 345 Z M 530 575 L 530 584 L 528 586 L 462 587 L 437 608 L 437 624 L 434 630 L 424 638 L 416 640 L 406 638 L 397 631 L 393 624 L 392 614 L 394 607 L 403 597 L 410 594 L 420 594 L 430 598 L 461 573 L 528 573 Z M 511 297 L 524 296 L 531 299 L 538 306 L 541 313 L 541 325 L 539 330 L 534 336 L 525 341 L 525 384 L 572 416 L 572 424 L 569 427 L 566 427 L 516 393 L 513 389 L 513 341 L 506 338 L 499 331 L 496 322 L 496 315 L 500 305 Z M 746 297 L 754 302 L 758 307 L 761 320 L 756 333 L 743 342 L 743 390 L 704 418 L 688 427 L 686 425 L 686 416 L 690 412 L 732 384 L 732 341 L 726 338 L 719 331 L 716 324 L 716 313 L 720 305 L 728 298 L 734 296 Z M 727 574 L 796 573 L 827 599 L 838 594 L 846 594 L 855 598 L 862 606 L 864 612 L 863 625 L 860 630 L 850 638 L 833 638 L 828 635 L 820 625 L 820 608 L 793 585 L 728 585 Z M 674 445 L 674 621 L 679 628 L 681 629 L 681 449 L 677 446 Z M 582 445 L 576 449 L 576 628 L 577 628 L 582 622 Z" fill="url(#lgHero)" fill-rule="evenodd"/>
+      </svg>
+    </div
   </div>
 </section>
 
@@ -3224,8 +3463,6 @@
 
       <!-- BPI™ 인지경영 진단 -->
       <a href="#" onclick="spa.go('bpi');return false;" class="diag-card diag-navy">
-        <div class="dc-badge">MediBrain · 인지경영</div>
-        <div class="dc-icon">🧠</div>
         <div class="dc-ttl">BPI™<br/>인지경영 진단</div>
         <div class="dc-eng">BRAIN PATTERN INDEX™</div>
         <div class="dc-desc">리더의 의사결정-실행 구조를 진단합니다. 판단이 어디서 멈추는지 뇌과학·인지과학 기반으로 분석하고 나의 실행루프 패턴 유형을 확인합니다.</div>
@@ -3248,8 +3485,6 @@
 
       <!-- BX Point 경영전환 진단 -->
       <a href="#" onclick="spa.go('bxpoint');return false;" class="diag-card diag-blue">
-        <div class="dc-badge">TONG · 경영전환</div>
-        <div class="dc-icon">📊</div>
         <div class="dc-ttl">BX Point<br/>경영전환 진단</div>
         <div class="dc-eng">BUSINESS TRANSFORMATION DIAGNOSIS</div>
         <div class="dc-desc">우리 조직이 경영전환을 해야 할 시점인지 진단합니다. 人·營·財·産 4축 기준으로 어느 축에서 병목이 발생하는지 확인하고 현재 BX Point 위치를 파악합니다.</div>
@@ -3436,12 +3671,8 @@
 <section class="hero">
   <div class="hero-grid"></div>
   <div class="hero-beam"></div>
-  <div class="hero-inner">
-    <div class="hero-badge">
-      <span class="dot-navy"></span>인지경영
-      <span class="sep">×</span>
-      <span class="dot-blue"></span>경영전환
-    </div>
+  <div class="hero-inner ws-hero-inner">
+    <div class="ws-hero-text">
     <h1>진단을 실행으로<br/><span class="hl-n">바꾸는</span> <span class="hl-b">하루</span></h1>
     <p class="hero-desc">두 전문가가 하루 안에 조직의 판단 구조와 경영 구조를 동시에 진단합니다.<br/><b>사전 진단부터 30일 실행 로드맵까지</b> 한 번에 설계합니다.</p>
     <div class="hero-btns">
@@ -3466,6 +3697,8 @@
       </div>
     </div>
   </div>
+    <div class="hero-visual ws-melody"><svg class="ws-melody-svg" viewBox="0 0 560 440" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"><defs><linearGradient id="wsUni" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2c695b"/><stop offset="1" stop-color="#3684FF"/></linearGradient><linearGradient id="tealFade" gradientUnits="userSpaceOnUse" x1="44" y1="0" x2="252" y2="0"><stop offset="0" stop-color="#2c695b" stop-opacity="0"/><stop offset="1" stop-color="#2c695b" stop-opacity="1"/></linearGradient><linearGradient id="blueFade" gradientUnits="userSpaceOnUse" x1="516" y1="0" x2="308" y2="0"><stop offset="0" stop-color="#3684FF" stop-opacity="0"/><stop offset="1" stop-color="#3684FF" stop-opacity="1"/></linearGradient><filter id="wsG" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="5"/></filter><marker id="arrR" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#2c695b"/></marker><marker id="arrL" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#3684FF"/></marker></defs><g stroke="rgba(80,110,150,.07)" stroke-width="1"><line x1="0" y1="0" x2="0" y2="440"/><line x1="40" y1="0" x2="40" y2="440"/><line x1="80" y1="0" x2="80" y2="440"/><line x1="120" y1="0" x2="120" y2="440"/><line x1="160" y1="0" x2="160" y2="440"/><line x1="200" y1="0" x2="200" y2="440"/><line x1="240" y1="0" x2="240" y2="440"/><line x1="280" y1="0" x2="280" y2="440"/><line x1="320" y1="0" x2="320" y2="440"/><line x1="360" y1="0" x2="360" y2="440"/><line x1="400" y1="0" x2="400" y2="440"/><line x1="440" y1="0" x2="440" y2="440"/><line x1="480" y1="0" x2="480" y2="440"/><line x1="520" y1="0" x2="520" y2="440"/><line x1="560" y1="0" x2="560" y2="440"/><line x1="0" y1="0" x2="560" y2="0"/><line x1="0" y1="40" x2="560" y2="40"/><line x1="0" y1="80" x2="560" y2="80"/><line x1="0" y1="120" x2="560" y2="120"/><line x1="0" y1="160" x2="560" y2="160"/><line x1="0" y1="200" x2="560" y2="200"/><line x1="0" y1="240" x2="560" y2="240"/><line x1="0" y1="280" x2="560" y2="280"/><line x1="0" y1="320" x2="560" y2="320"/><line x1="0" y1="360" x2="560" y2="360"/><line x1="0" y1="400" x2="560" y2="400"/><line x1="0" y1="440" x2="560" y2="440"/></g><path d="M 44,116 L 252,116" fill="none" stroke="url(#tealFade)" stroke-width="3.2" stroke-linecap="round" marker-end="url(#arrR)" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" from="1" to="0" dur="0.9s" begin="0.2s" fill="freeze"/></path><path d="M 516,116 L 308,116" fill="none" stroke="url(#blueFade)" stroke-width="3.2" stroke-linecap="round" marker-end="url(#arrL)" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" from="1" to="0" dur="0.9s" begin="0.2s" fill="freeze"/></path><path d="M 280,116 C 262,180 300,225 278,282 C 262,330 292,356 284,398" fill="none" stroke="url(#wsUni)" stroke-width="3.2" stroke-linecap="round"  pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" from="1" to="0" dur="1.5s" begin="1.1s" fill="freeze"/></path><circle cx="280" cy="116" r="24" fill="#3684FF" opacity="0.3" filter="url(#wsG)"><animate attributeName="opacity" values="0.15;0.4;0.15" dur="2.6s" repeatCount="indefinite"/></circle><circle cx="280" cy="116" r="12" fill="url(#wsUni)"/><circle cx="280" cy="116" r="18" fill="url(#wsUni)" opacity="0" filter="url(#wsG)"><animate attributeName="opacity" values="0;0.75;0" dur="2.8s" begin="0.0s" repeatCount="indefinite"/></circle><circle cx="272" cy="186" r="18" fill="url(#wsUni)" opacity="0" filter="url(#wsG)"><animate attributeName="opacity" values="0;0.75;0" dur="2.8s" begin="0.45s" repeatCount="indefinite"/></circle><circle cx="290" cy="250" r="18" fill="url(#wsUni)" opacity="0" filter="url(#wsG)"><animate attributeName="opacity" values="0;0.75;0" dur="2.8s" begin="0.9s" repeatCount="indefinite"/></circle><circle cx="273" cy="314" r="18" fill="url(#wsUni)" opacity="0" filter="url(#wsG)"><animate attributeName="opacity" values="0;0.75;0" dur="2.8s" begin="1.35s" repeatCount="indefinite"/></circle><circle cx="284" cy="398" r="18" fill="url(#wsUni)" opacity="0" filter="url(#wsG)"><animate attributeName="opacity" values="0;0.75;0" dur="2.8s" begin="1.8s" repeatCount="indefinite"/></circle><circle cx="272" cy="186" r="9" fill="#fff" stroke="url(#wsUni)" stroke-width="3"/><circle cx="290" cy="250" r="9" fill="#fff" stroke="url(#wsUni)" stroke-width="3"/><circle cx="273" cy="314" r="9" fill="#fff" stroke="url(#wsUni)" stroke-width="3"/><circle cx="284" cy="398" r="14" fill="url(#wsUni)"/><circle cx="284" cy="398" r="6" fill="#fff" opacity="0.9"/><circle r="4.8" fill="#2c695b" opacity="0.85"><animateMotion dur="3.8s" begin="0s" repeatCount="indefinite" path="M 44,116 L 252,116 280,116 C 262,180 300,225 278,282 C 262,330 292,356 284,398" calcMode="linear"/><animate attributeName="opacity" values="0;0.85;0.85;0" keyTimes="0;0.1;0.85;1" dur="3.8s" begin="0s" repeatCount="indefinite"/></circle><circle r="4.8" fill="#2c695b" opacity="0.85"><animateMotion dur="3.8s" begin="1.7s" repeatCount="indefinite" path="M 44,116 L 252,116 280,116 C 262,180 300,225 278,282 C 262,330 292,356 284,398" calcMode="linear"/><animate attributeName="opacity" values="0;0.85;0.85;0" keyTimes="0;0.1;0.85;1" dur="3.8s" begin="1.7s" repeatCount="indefinite"/></circle><circle r="4.8" fill="#3684FF" opacity="0.85"><animateMotion dur="3.8s" begin="0.6s" repeatCount="indefinite" path="M 516,116 L 308,116 280,116 C 262,180 300,225 278,282 C 262,330 292,356 284,398" calcMode="linear"/><animate attributeName="opacity" values="0;0.85;0.85;0" keyTimes="0;0.1;0.85;1" dur="3.8s" begin="0.6s" repeatCount="indefinite"/></circle><circle r="4.8" fill="#3684FF" opacity="0.85"><animateMotion dur="3.8s" begin="2.3s" repeatCount="indefinite" path="M 516,116 L 308,116 280,116 C 262,180 300,225 278,282 C 262,330 292,356 284,398" calcMode="linear"/><animate attributeName="opacity" values="0;0.85;0.85;0" keyTimes="0;0.1;0.85;1" dur="3.8s" begin="2.3s" repeatCount="indefinite"/></circle><text x="44" y="100" font-size="13" font-weight="700" fill="#2c695b" text-anchor="start" font-family="'Noto Sans KR',sans-serif">인지경영</text><text x="516" y="100" font-size="13" font-weight="700" fill="#3684FF" text-anchor="end" font-family="'Noto Sans KR',sans-serif">경영전환</text><text x="306" y="403" font-size="13" font-weight="700" fill="#0D2550" text-anchor="start" font-family="'Noto Sans KR',sans-serif">실행 로드맵</text></svg></div>
+  </div>
 </section>
 
 <!-- 워크숍 개요 -->
@@ -3478,25 +3711,21 @@
     </div>
     <div class="overview-grid">
       <div class="ov-card">
-        <div class="ov-icon">🎯</div>
         <div class="ov-ttl">목적</div>
         <div class="ov-val">진단에서<br/>실행 로드맵까지</div>
         <div class="ov-desc">지식 전달이 아닌 조직이 실제로 움직이는 구조를 만드는 것</div>
       </div>
       <div class="ov-card">
-        <div class="ov-icon">👥</div>
         <div class="ov-ttl">대상</div>
         <div class="ov-val">팀장급 이상<br/>의사결정자</div>
         <div class="ov-desc">대표·임원·팀장이 함께 참여할수록 전환 효과가 극대화됩니다</div>
       </div>
       <div class="ov-card">
-        <div class="ov-icon">🔧</div>
         <div class="ov-ttl">형태</div>
         <div class="ov-val">강의 + 진단<br/>+ 실습 + 설계</div>
         <div class="ov-desc">이론 전달 30% / 진단·실습·설계 70%의 실전 중심 구성</div>
       </div>
       <div class="ov-card">
-        <div class="ov-icon">📍</div>
         <div class="ov-ttl">장소</div>
         <div class="ov-val">방문 또는<br/>지정 장소</div>
         <div class="ov-desc">귀사 내부 회의실 방문 운영 가능. 외부 장소 별도 협의</div>
@@ -3701,28 +3930,24 @@
     </div>
     <div class="target-grid">
       <div class="tg-card">
-        <div class="tg-icon">📊</div>
         <div class="tg-body">
           <div class="tg-ttl">성장이 정체된 중소기업</div>
           <div class="tg-desc">매출은 있는데 성장이 멈춘 느낌. 열심히 하는데 조직이 나아가지 않는다면 판단 구조와 경영 구조를 동시에 점검해야 합니다.</div>
         </div>
       </div>
       <div class="tg-card">
-        <div class="tg-icon">⚡</div>
         <div class="tg-body">
           <div class="tg-ttl">실행력이 떨어진 팀</div>
           <div class="tg-desc">결정은 나는데 실행이 안 됩니다. 회의는 많은데 아무것도 바뀌지 않는다면 NECX™ 실행루프 진단이 필요합니다.</div>
         </div>
       </div>
       <div class="tg-card">
-        <div class="tg-icon">🔄</div>
         <div class="tg-body">
           <div class="tg-ttl">조직 전환점을 맞은 기업</div>
           <div class="tg-desc">사람이 늘었거나, 시장이 바뀌었거나, 대표가 변화의 필요성을 느끼는 순간. ABCDE 사이클 기준으로 지금이 어느 지점인지 확인합니다.</div>
         </div>
       </div>
       <div class="tg-card">
-        <div class="tg-icon">🎯</div>
         <div class="tg-body">
           <div class="tg-ttl">리더십 전환이 필요한 조직</div>
           <div class="tg-desc">리더의 판단 패턴이 조직 실행에 영향을 미치고 있다고 느끼는 경우. 인지경영 진단으로 구조적 원인을 찾아냅니다.</div>
@@ -3900,7 +4125,7 @@
 </div>
 
 <!-- ===== PAGE: BPI ===== -->
-<div class="spa-page" <div class="spa-page" id="spa-bpi">
+<div class="spa-page" id="spa-bpi">
 <div class="app">
 
   <div class="topbar">
@@ -4211,6 +4436,27 @@
       document.querySelectorAll('[data-spa]').forEach(function(a) {
         a.classList.toggle('active', a.dataset.spa === pid);
       });
+
+      // 경영전환 BX 곡선 애니메이션 재생(SPA 전환 시)
+      if (pid === 'workshop') {
+        requestAnimationFrame(function(){
+          var _ws=document.querySelector('#spa-workshop .ws-melody-svg');
+          if (_ws && _ws.setCurrentTime) { try { _ws.setCurrentTime(0); } catch(e){} }
+        });
+      }
+      if (pid === 'cognitive') {
+        requestAnimationFrame(function(){
+          document.querySelectorAll('#spa-cognitive .cx-neuro-svg, #spa-cognitive .hero-ecg svg').forEach(function(sv){
+            if (sv.setCurrentTime) { try { sv.setCurrentTime(0); } catch(e){} }
+          });
+        });
+      }
+      if (pid === 'management') {
+        requestAnimationFrame(function(){
+          var _bx = document.querySelector('#spa-management .bx-hero-svg');
+          if (_bx && _bx.setCurrentTime) { try { _bx.setCurrentTime(0); } catch(e){} }
+        });
+      }
 
       // 모바일 메뉴 열려 있으면 닫기
       var _nm = document.querySelector('.nav-menu');
